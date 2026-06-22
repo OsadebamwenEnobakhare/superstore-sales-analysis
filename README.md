@@ -23,17 +23,16 @@ Column GroupFieldsOrder InformationOrder ID, Order Date, Ship Date, Ship ModeCus
 
 
 ## Data Quality Issues Resolved
+•	Confirmed zero missing values across all 21 columns 
+•	Confirmed zero duplicate records 
+•	Standardised date columns and converted to proper datetime format 
+•	Engineered new date features: Order Year, Order Month, Order Quarter, Year-Month 
+•	Standardised all text columns — stripped whitespace and applied consistent title case 
+•	Verified all Sales values were positive — no invalid entries found 
+•	Retained negative Profit rows as valid loss-making transactions caused by heavy discounting 
+•	Removed two irrelevant columns: Row ID (sequential index) and Country (single value) 
+•	Exported cleaned dataset as superstore_cleaned.csv 
 
-
-Confirmed zero missing values across all 21 columns
-Confirmed zero duplicate records
-Standardised date columns and converted to proper datetime format
-Engineered new date features: Order Year, Order Month, Order Quarter, Year-Month
-Standardised all text columns — stripped whitespace and applied consistent title case
-Verified all Sales values were positive — no invalid entries found
-Retained negative Profit rows as valid loss-making transactions caused by heavy discounting
-Removed two irrelevant columns: Row ID (sequential index) and Country (single value)
-Exported cleaned dataset as superstore_cleaned.csv
 
 
 
@@ -47,55 +46,63 @@ MetricValueTotal Revenue$2,297,201Total Profit$286,397Profit Margin12.47%Total O
 **Product Analysis**
 
 
-Technology is the highest-revenue category at $836,154 with a 17.4% profit margin
-Furniture generates $741,999 in revenue but has a critically low 2.5% profit margin
-Office Supplies matches Technology's efficiency at 17.0% margin
-Canon imageCLASS 2200 Advanced Copier is the top-selling individual product
-Bottom 10 products each generated under $20 in total sales across 4 years
+•	Technology is the highest-revenue category at $836,154 with a 17.4% profit margin
+•	Furniture generates $741,999 in revenue but has a critically low 2.5% profit margin
+•	Office Supplies matches Technology's efficiency at 17.0% margin
+•	Canon imageCLASS 2200 Advanced Copier is the top-selling individual product
+•	Bottom 10 products each generated under $20 in total sales across 4 years
+
 
 
 **Customer Analysis**
 
 
-Consumer segment drives 50.6% of total revenue across 410 customers
-Corporate segment contributes 30.7% with a 13.0% profit margin
-Home Office is the most margin-efficient segment at 14.0%
+•	Consumer segment drives 50.6% of total revenue across 410 customers
+•	Corporate segment contributes 30.7% with a 13.0% profit margin
+•	Home Office is the most margin-efficient segment at 14.0%
+
 
 
 **Sales Analysis**
 
 
-Consistent Q4 (Oct–Dec) revenue spikes visible across all four years
-West region leads in both revenue ($725K) and profit ($108K)
-Central region underperforms — 21.8% revenue share but disproportionately low profit
-Year-on-year revenue growth with 2017 achieving the highest monthly peaks
+•	Consistent Q4 (Oct–Dec) revenue spikes visible across all four years
+•	West region leads in both revenue ($725K) and profit ($108K)
+•	Central region underperforms — 21.8% revenue share but disproportionately low profit
+•	Year-on-year revenue growth with 2017 achieving the highest monthly peaks
 
 
 **Discount Analysis**
 
 
-Discount vs Sales correlation: +0.005 — discounts do not meaningfully boost sales
-Discount vs Profit correlation: −0.219 — discounts consistently destroy margin
-Discounts above 40% almost universally produce losses
-Furniture carries the highest average discount (16.5%) and lowest average profit per order ($8.73)
+•	Discount vs Sales correlation: +0.005 — discounts do not meaningfully boost sales
+•	Discount vs Profit correlation: −0.219 — discounts consistently destroy margin
+•	Discounts above 40% almost universally produce losses
+•	Furniture carries the highest average discount (16.5%) and lowest average profit per order ($8.73)
+
 
 
 
 ## Business Insights
 
 1) Which category generates the highest revenue?
+   
 Technology — $836,154 in revenue with a 17.4% margin. The clear portfolio leader in both revenue and profitability.
 
 2) Which customer segment is most profitable?
+   
 Consumer in absolute profit ($134,119). Home Office leads on margin efficiency at 14.0% making it the most valuable per-customer segment.
 
 3) Do discounts increase sales significantly?
+   
 No. Correlation with sales is +0.005 — essentially zero. Discounts have a strong negative impact on profit at −0.219. They are not an effective sales lever.
 
 4) Which products should receive more marketing attention?
+   
 Technology products — Phones, Copiers, and Machines — are already the strongest performers and should receive continued investment. Bottom 10 products should be reviewed for discontinuation rather than marketing spend.
 
 5) Which regions should be prioritised for growth?
+    
 Central region. It generates 21.8% of revenue but a disproportionately low share of profit, pointing to fixable pricing and operational inefficiencies.
 
 
