@@ -166,7 +166,7 @@ Completed: ALX Data Analysis Course · TS Academy Automation Course · Dataverse
 This capstone project applies structured data analytics methodology to a real-world retail business context, combining evidence-based thinking from a clinical background with data-driven decision making.
 
 
-Licence
+## Licence
 
 This project is an academic and professional capstone. The Super Store dataset is a publicly available sample dataset used for educational purposes.
 
