@@ -12,14 +12,12 @@ This is a full end-to-end data analytics capstone project analysing the Super St
 
 The project covers the complete analytics workflow — from raw data profiling and cleaning in Python, through exploratory data analysis with 7 visualizations, to a written business report, Excel scorecard, and executive PowerPoint presentation.
 
-ItemDetailPeriodJanuary 2014 – December 2017DatasetSample - SuperstoreTotal Records9,994 ordersTotal Columns21 fieldsCategoriesFurniture · Office Supplies · TechnologyRegionsWest · East · Central · South
+Period - January 2014 – December 2017, DatasetSample - Superstore, Total Records - 9,994 orders, Total Columns - 21, fieldsCategories - Furniture · Office Supplies · Technology, Regions - West · East · Central · South
 
 
 ## Dataset
 
 The Super Store dataset contains order-level retail transaction records from a US-based retail company. It captures customer orders across three product categories, three customer segments, and four geographic regions over four years.
-
-Column GroupFieldsOrder InformationOrder ID, Order Date, Ship Date, Ship ModeCustomer InformationCustomer ID, Customer Name, Segment, City, State, RegionProduct InformationProduct ID, Category, Sub-Category, Product NameFinancial MetricsSales, Quantity, Discount, Profit
 
 
 ## Data Quality Issues Resolved
@@ -38,7 +36,7 @@ Column GroupFieldsOrder InformationOrder ID, Order Date, Ship Date, Ship ModeCus
 
 ## Key Metrics
 
-MetricValueTotal Revenue$2,297,201Total Profit$286,397Profit Margin12.47%Total Orders5,009Average Order Value$229.86Total Customers793Units Sold37,873
+Total Revenue - $2,297,201  , Total Profit - $286,397 ,  Profit Margin - 12.47%  , Total Orders - 5,009 ,  Average Order Value - $229.86 ,  Total Customers - 793 ,  Units Sold - 37,873
 
 
 ## Exploratory Data Analysis
@@ -117,41 +115,36 @@ Central region. It generates 21.8% of revenue but a disproportionately low share
 6) Plan proactively for Q4 demand spikes — Begin inventory build-up and staffing preparation from September each year to prevent stockouts during peak trading.
 
 
-
 ## Visualizations
 
-Top 10 Best-Selling Products
+### Top 10 Best-Selling Products
+![Top 10 Products](viz1_top10_products.png)
 
-Show Image
+### Monthly Sales Trend (2014–2017)
+![Monthly Sales Trend](viz2_monthly_sales_trend.png)
 
-Monthly Sales Trend (2014–2017)
+### Revenue by Customer Segment
+![Segment Pie Chart](viz3_segment_pie.png)
 
-Show Image
+### Distribution of Sales Values
+![Sales Distribution](viz4_sales_distribution.png)
 
-Revenue by Customer Segment
+### Correlation Heatmap — Sales, Profit, Discount, Quantity
+![Correlation Heatmap](viz5_correlation_heatmap.png)
 
-Show Image
+### Revenue & Profit by Region
+![Region Bar Chart](viz6_region_revenue_profit.png)
 
-Distribution of Sales Values
-
-Show Image
-
-Correlation Heatmap — Sales, Profit, Discount, Quantity
-
-Show Image
-
-Revenue & Profit by Region
-
-Show Image
-
-Discount vs Profit by Category
-
-Show Image
+### Discount vs Profit by Category
+![Discount vs Profit](viz7_discount_vs_profit.png)
 
 
-Running the Python Script
 
-Requirements
+
+
+## Running the Python Script
+
+**Requirements**
 
 bashpip install pandas numpy matplotlib seaborn openpyxl
 
@@ -159,7 +152,7 @@ Run the Notebook
 
 bashjupyter notebook superstore_analysis.ipynb
 
-Make sure super store.xlsx is in the same folder as the notebook before running. All 7 visualizations will be saved automatically as PNG files when you run all cells.
+Make sure super store.xlsx is in the same folder as the notebook before running. 
 
 
 ## About the Analyst
